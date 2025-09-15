@@ -1,0 +1,44 @@
+---
+import Logo from "../assets/Logo.svg";
+---
+
+<header class="header">
+  <nav class="nav">
+    <a href="#" class="nav-link">EXPLORE</a>
+
+    <a href="/" class="logo">
+      <img src={Logo.src} alt="CRTV ESC logo" />
+    </a>
+
+    <a href="#" class="nav-link">ABOUT US</a>
+  </nav>
+</header>
+
+<style>
+  .header {
+    background: #ffff;
+    padding: 1rem 2rem;
+  }
+
+  .nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-link {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: #000;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+
+  .logo img {
+    height: 32px;
+    display: block;
+  }
+</style>
