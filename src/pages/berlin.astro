@@ -1,0 +1,187 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>artikel</title>
+  </head>
+  <body>
+    <Layout>
+      <section class="title">
+        <div>
+          <h1>
+            WHAT CAN’T I MISS IN BERLIN <br />
+            AS A CREATIVE FIRST-TIMER
+          </h1>
+        </div>
+        <div id="undertitel">
+          <h2>
+            The surreal installation featuring a cat-faced burger is created by a contemporary <br />visual artist known for blending humor, pop culture, and surrealism.
+          </h2>
+        </div>
+      </section>
+      <section class="article">
+        <div>
+          <img id="circle1" src="../public/circle1.webp" alt="circle1" />
+          <h3>Fotografiska Berlin – A Playground for Creative Minds</h3>
+          <p>
+            Hidden in the heart of Berlin, Fotografiska is not just a museum — it’s an experience. Known worldwide for pushing the boundaries of photography and visual storytelling, Fotografiska Berlin transforms traditional exhibitions into
+            immersive journeys that awaken your senses and challenge your perspective on art. Unlike typical galleries where you quietly walk past framed works, Fotografiska invites you to step inside the artists’ worlds. Each exhibition is curated
+            like a stage set — lights, sound, colors, and spatial design all work together to evoke emotion and spark curiosity. One moment you might find yourself in a room full of surreal collages and bold street photography, the next you’re
+            surrounded by dreamlike soundscapes and glowing installations. What makes Fotografiska truly stand out is its mission: to make art accessible and relevant to everyone. It’s a place where creativity and culture collide — perfect for
+            curious travelers, design lovers, and anyone seeking a fresh perspective on contemporary visual art. So if you’re in Berlin and want more than just another museum visit, step into Fotografiska. It’s not about looking at art from a
+            distance — it’s about feeling it. Hidden in the heart of Berlin, Fotografiska is not just a museum — it’s an experience.
+          </p>
+        </div>
+        <div>
+          <img id="article_img" src="../public/cat.webp" alt="burgercat" />
+        </div>
+      </section>
+      <section class="article">
+        <div>
+          <img id="article_img" src="../public/banana1.webp" alt="banan" />
+        </div>
+        <div>
+          <img id="circle2" src="../public/circle2.webp" alt="" />
+          <h3>Art you can swim in – literally. Meet the banana pool at Fotografiska</h3>
+          <p>
+            Hidden in the heart of Berlin, Fotografiska is not just a museum — it’s an experience. Known worldwide for pushing the boundaries of photography and visual storytelling, Fotografiska Berlin transforms traditional exhibitions into
+            immersive journeys that awaken your senses and challenge your perspective on art. Unlike typical galleries where you quietly walk past framed works, Fotografiska invites you to step inside the artists’ worlds. Each exhibition is curated
+            like a stage set — lights, sound, colors, and spatial design all work together to evoke emotion and spark curiosity. One moment you might find yourself in a room full of surreal collages and bold street photography, the next you’re
+            surrounded by dreamlike soundscapes and glowing installations. What makes Fotografiska truly stand out is its mission: to make art accessible and relevant to everyone. It’s a place where creativity and culture collide — perfect for
+            curious travelers, design lovers, and anyone seeking a fresh perspective on contemporary visual art. So if you’re in Berlin and want more than just another museum visit.
+          </p>
+        </div>
+      </section>
+      <section class="quote">
+        <h1 id="quote">"TURN CURIOSITY INTO CREATION.”</h1>
+      </section>
+      <section>
+        <img id="events_img" src="../public/events_img.webp" alt="" />
+      </section>
+    </Layout>
+  </body>
+</html>
+
+<style>
+  h1 {
+    font-family: "francois one";
+  }
+  h2 {
+    font-family: "francois one";
+  }
+  h3 {
+    font-family: "francois one";
+  }
+
+  /* NAVBAR */
+  #logo {
+    width: 15%;
+  }
+
+  .a_nav {
+    text-decoration: none;
+  }
+
+  a {
+    font-family: fran;
+    font-size: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: black;
+  }
+
+  .navbar {
+    font-family: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* TITLE */
+
+  h1 {
+    font-family: bold;
+    font-size: 40px;
+  }
+
+  h2 {
+    font-family: medium;
+    font-size: 19px;
+    padding-top: 10px;
+  }
+
+  .title {
+    justify-content: center;
+    text-align: center;
+    padding-top: 150px;
+  }
+
+  /* ARTICLE */
+  p {
+    font-family: light;
+    line-height: 30px;
+    width: 95%;
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  h3 {
+    font-family: medium;
+  }
+
+  .article {
+    margin: 180px;
+    display: flex;
+    gap: 40px;
+  }
+
+  #circle1 {
+    position: absolute;
+    right: 0;
+    top: 540px;
+    width: 45%;
+    z-index: -1;
+  }
+
+  #circle2 {
+    position: absolute;
+    left: 0;
+    top: 1450px;
+    width: 45%;
+    z-index: -1;
+  }
+
+  #article_img {
+    width: 500px;
+    height: auto;
+    aspect-ratio: 2/2;
+    object-fit: cover;
+    padding: 30px 0;
+  }
+
+  /* QUOTE */
+
+  .quote {
+    text-align: center;
+    padding: 100px;
+    background-color: rgba(227, 255, 198, 1);
+  }
+
+  #quote {
+    font-size: 50px;
+  }
+
+  /* EVENTS */
+
+  #events_img {
+    width: 100%;
+  }
+</style>

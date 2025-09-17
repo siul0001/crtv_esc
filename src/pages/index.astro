@@ -2,9 +2,80 @@
 import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Hero.astro";
 import Some from "../components/Some.astro";
+import Artikler from "../components/Artikler.astro";
+import image_01 from "../assets/artikel1.webp";
+import image_02 from "../assets/artikel2.webp";
+import Lande from "../components/Lande.astro";
 ---
 
 <Layout>
   <Hero />
   <Some />
+  <section class="bg">
+    <div>
+      <Artikler image={image_01} title="artikel1 billede" link="/berlin" overskrift="WHAT CAN'T I MISS IN BERLIN AS A CREATIVE FIRST-TIMER?" />
+      <Artikler image={image_02} title="artikel1 billede" link="/berlin" overskrift="WHAT CAN'T I MISS IN COPENHAGEN AS A CREATIVE FIRST-TIMER?" />
+    </div>
+  </section>
+  <section class="knapper">
+    <h2>WHERE DO YOU WANT TO GO?</h2>
+    <div class="flex-btn">
+      <Lande label="BERLIN" color="purple" href="/berlin" />
+      <Lande label="KØBENHAVN" color="purple" href="/københavn" />
+    </div>
+    <h3>...COOMING SOON</h3>
+    <div class="flex-btn">
+      <Lande label="LONDON" color="grey" />
+      <Lande label="OSLO" color="grey" />
+      <Lande label="PARIS" color="grey" />
+    </div>
+  </section>
 </Layout>
+
+<style>
+  h1 {
+    font-family: "francois one";
+  }
+  h2 {
+    font-family: "francois one";
+  }
+  h3 {
+    font-family: "francois one";
+  }
+
+  .bg div {
+    display: flex;
+    justify-content: center;
+    background-image: url(../public/grafitti.png);
+    gap: 100px;
+  }
+
+  .artikel1 img {
+    width: 50%;
+  }
+
+  /* btn css */
+  .btn-flex {
+    display: flex;
+    flex-direction: row;
+  }
+  .flex-btn {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding: 30px 0;
+  }
+  .knapper h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #b982e7;
+  }
+  .knapper h3 {
+    color: #a1a1a1;
+    text-align: center;
+  }
+  .knapper {
+    background-color: #fff8db;
+    padding: 150px 0;
+  }
+</style>

@@ -1,0 +1,35 @@
+---
+const { image, title, overskrift, link } = Astro.props;
+import { Image } from "astro:assets";
+---
+
+<div class="artikel1">
+  <a href={link}>
+    <Image src={image} alt={title} />
+  </a>
+  <h3>{overskrift}</h3>
+</div>
+
+<style>
+  h1 {
+    font-family: "francois one";
+  }
+  h2 {
+    font-family: "francois one";
+  }
+  h3 {
+    font-family: "francois one";
+  }
+
+  .artikel1 h3 {
+    color: black;
+    font-size: 2rem;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .artikel1 img {
+    size: 50%;
+    padding-top: 100px;
+  }
+</style>
